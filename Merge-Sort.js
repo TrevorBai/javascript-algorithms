@@ -1,7 +1,13 @@
 // **************************************************
-//       Merge
+//       Merge (way naive, least optimal)
 // **************************************************
 
+// This merge method is very intuitive but very not efficient.
+// Every time we call merge method, it would create an array to store
+// all the elements from both arrays. There is a more efficient but 
+// less-intuitive way to achieve the merge process just IN PLACE with 
+// the help of ONE extra helper array. That's it, no more new declared 
+// array in the merge method. So really think about that method.
 const merge = (arr1, arr2) => {
   let sortedArr = []
   let i = 0
